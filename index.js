@@ -17,7 +17,7 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 
-const menuToggleIcon = selectElement(`#menu-toggle-icon`);
+const menuToggleIcon = selectElement('#menu-toggle-icon');
 
 const toggleMenu = () => {
     const mobileMenu = selectElement('#menu');
@@ -26,3 +26,19 @@ const toggleMenu = () => {
 };
 
 menuToggleIcon.addEventListener('click', toggleMenu);
+
+const bodyElement = document.body;
+const themeToggleBtn = selectElement('#theme-toggle-btn');
+const currentTheme = localStorage.getItem('currentTheme');
+
+themeToggleBtn.addEventListener('click', () => {
+    bodyElement.classList.toggle('light-theme');
+
+    if(bodyElement.classList.contains('light-theme')){
+        localStorage.setItem('currentTheme', 'themeActive');
+    }else{
+        localStorage.removeItem('currentTheme');
+    }
+
+
+});
