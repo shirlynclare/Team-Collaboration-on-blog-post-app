@@ -22,4 +22,36 @@ html {
 /* FEATURED BLOGS */
 
 /* QUICK READ */
-
+/*OLDER POSTS*/
+.older-posts-grid-wrapper{
+    gap: var();
+}
+.older-posts-article-image-wrapper,
+.older-posts .article {
+    min-height: var();
+}
+.older-posts .article{
+background-color: var();
+}
+.older-posts-article-image-wrapper{
+position: relative;
+}
+.older-posts-grid-wrapper .article-data-container{
+position: static;
+background-color: transparent;
+}
+.older-posts-grid-wrapper .article-title{
+    margin-bottom: var();
+}
+.see-more-container{
+    margin-top: var();
+}
+.see-more-btn{
+    text-transform:uppercase ;
+}
+.see-more-btn i{
+    transition:transform .25s;
+}
+.see-more-btn:hover i {
+    transform: translateX(.5rem);
+}
