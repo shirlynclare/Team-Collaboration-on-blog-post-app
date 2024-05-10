@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    position: relative; 
+    overflow-x: hidden; 
+    background-image: url(/img/oasis.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    color: whitesmoke;
+    top: 0;
+    height: 5vh
+    ;background-image: url(/img/desert.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    margin: 0;
+    padding-left: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 70%; 
+    background-image: linear-gradient(rgb(230, 157, 61), rgb(223, 190, 7));
+    z-index: -1; 
+    border: 2px solid black
+}
+
+
+p {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    position: relative; 
+    overflow-x: hidden; 
+    max-width: 800px;
+}
+
