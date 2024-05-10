@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elevation BLogs</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="img/blog post icon.jpg" type="image/jpg" sizes="400x300">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="/main.js"></script>
 
 </head>
 <body>
+  <!--Header-->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="./index.html">
+        <h2 class="logo">Elevation Blogs</h2>
+      </a>
+      <div class="menu" id="menu">
+        <ul class="list">
+          <li class="list-item">
+            <a href="#" class="list-link current">Home</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link current">Current Blogs</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link current">Contact</a>
+          </li>
+          <li class="list-item">
+            <a href="signin.html" class="list-link current screen-lg-hidden">Sign In</a>
+          </li>
+          <li class="list-item">
+            <a href="signup.html" class="list-link current screen-lg-hidden">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list list-right">
+        <button class="btn place-items-center" id="theme-toggle-btn">
+          <i class="ri-sun-line sun-icon"></i>
+          <i class="ri-moon-line moon-icon"></i>
+        </button>
+
+        <button class="btn place-items-center" id="search-icon">
+          <i class="ri-search-line"></i>
+        </button>
+        <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+          <i class="ri-menu-3-line open-menu-icon"></i>
+          <i class="ri-close-line close-menu-icon"></i>
+        </button>
+
+        <a href="#" class="list-link screen-sm-hidden">Sign In</a>
+        <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border"><span>
+          Sign In
+        </span></a>
+      </div>
+    </nav>
+  </header>
     <!-- FEATURED BLOGS -->
     <section class="featuredblogs__header">
         <div class="featuredblogs__container">
@@ -53,6 +103,18 @@
                     <span class="blog-data-spacer"></span>
                   </div>
                   <h3 class="blog-title">soccer!</h3>
+                </div>
+            </a>    
+            <a href="blogpost3.html" class="blog-featuredblog">
+                <img src="img/gaming.jpg" alt="Games" width="1300" height="648" class="blog-image">
+                <figcaption class="blog-category">Gaming</figcaption>
+
+                <div class="blog-data-container">
+                  <div class="blog-data">
+                    <span>May 10th 2024</span>
+                    <span class="blog-data-spacer"></span>
+                  </div>
+                  <h3 class="blog-title">Want To Escape Reality for a while?</h3>
                 </div>
             </a>    
             </div>
@@ -107,7 +169,7 @@
                               <span>May 10th 2024</span>
                               <span class="blog-data-spacer"></span>
                             </div>
-                            <h3 class="blog-title"></h3>
+                            <h3 class="gaming">A Great Way of Escaping reality</h3>
                     </a>
 
                 </div>
@@ -120,90 +182,5 @@
         </div>
 
     </section>
-    <!-- newsletter -->
-    <section class="newsletter section">
-        <div class="container"> 
-            <h2 class="title section-title" data-name="">Newsletter</h2>
-
-            <div class="form-container-inner">
-                <h6 class="title newsletter-title">Subscribe to Yolo</h6>
-                <p>Yolo aims at connecting bloggers from all over the world to share incite in whatever suite them,join us for a terrific and marvelous journey towards the world of the known as we deal with pure research and latest trends in the world.</p>
-
-                <form action="" class="form">
-                  <input type=" text" class="form-input" placeholder="Enter your email address">
-                  <button class="btn form-btn" type="submit">
-                    <i class="ri-mail-send-line"></i>
-                  </button>
-                </form>
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-    <!-- footer -->
-    <footer class="footer section">
-      <div class="footer-container container d-grid">
-        <div class="company-data">
-        <a href="./index.html">
-           <h2 class="logo">Yolo</h2>
-        </a>
-        <p class="company-description">
-          Yolo aims at connecting bloggers from all over the world to share incite in whatever suite them,join us for a terrific and marvelous journey towards
-        </p>
-        <ul class="list social-media">
-          <li class="list-item">
-            <a href="#"  class="list-link">
-              <i class="ri-instagram-line"></i>
-            </a>
-            <a href="#"  class="list-link">
-              <i class="ri-facebook-circle-line"></i>
-            </a>
-            <a href="#"  class="list-link">
-              <i class="ri-twitter-line"></i>
-            </a>
-            <a href="#"  class="list-link">
-              <i class="ri-pinterest-line"></i>
-            </a>
-          </li>
-        </ul>
-
-        <div class="span coyright-notice">&copy; 2024 Yolo. All rights reserved.</div>
-        </div>
-        <div>
-          <h6 class="title footer-title">Lifestyle</h6>
-
-          <ul class="list footer-list">
-            <li class="list-item">
-              <a href="#" class="list-link">Music</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link">Gaming</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link">Soccer</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link">Fashion</a>
-            </li>
-          </ul>
-          <h6 class="title footer-title">Health</h6>
-
-          <ul class="list footer-list">
-            <li class="list-item">
-              <a href="#" class="list-link">Nutrition</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link">Exercise</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link">Soccer</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
 </body>
 </html>
