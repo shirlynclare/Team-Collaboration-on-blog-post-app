@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elevation BLogs</title>
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="icon" href="img/blog post icon.jpg" type="image/jpg" sizes="400x300">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <script src="/main.js"></script>
+
+    
+
+
+    <script src="main.js"></script>
+<script src="script.js"></script>
 
 </head>
 <body>
@@ -23,7 +28,7 @@
             <a href="#" class="list-link current">Home</a>
           </li>
           <li class="list-item">
-            <a href="#" class="list-link current">Current Blogs</a>
+            <a href="#blogs" class="list-link current">Featured Blogs</a>
           </li>
           <li class="list-item">
             <a href="#" class="list-link current">Contact</a>
@@ -32,7 +37,10 @@
             <a href="signin.html" class="list-link current screen-lg-hidden">Sign In</a>
           </li>
           <li class="list-item">
-            <a href="signup.html" class="list-link current screen-lg-hidden">Sign Up</a>
+
+            <a href="signup.html" class="list-link current screen-lg-hidden">Sign up</a>
+    <a href="./signup.html" class="list-link current screen-lg-hidden">Sign Up</a>
+
           </li>
         </ul>
       </div>
@@ -58,61 +66,91 @@
       </div>
     </nav>
   </header>
-    <!-- FEATURED BLOGS -->
+
+
+  <div class="search-form-container container" id="search-form-container">
+
+    <div class="form-container-inner">
+
+      <form action="" class="form">
+        <input type="text" class="form-input" placeholder="What are your interests?">
+        <button class="btn form-btn" type="submit">
+          <i class="ri-search-line"></i>
+        </button>
+      </form>
+      <span class="form-note">Or presss ESC to close</span>
+    </div>
+
+    <button class="btn-form-close-btn place-items-center" id="form-close-btn">
+      <i class="ri-close-line"></i>
+    </button>
+  </div>
+    FEATURED BLOGS
     <section class="featuredblogs__header">
+
+    <!-- FEATURED BLOGS -->
+    <section class="featuredblogs section" id="blogs">
+
         <div class="featuredblogs__container">
             <div class="featuredblogs__content">
                 <div class="featuredblogs__topic-banner">
-                    <h3 class="featuredblogs__headline">
-                       Featured Blogs
+                    <h3 class="featuredblogs__headline border">
+                       <p>Lifestyle</p>
                     </h3>
-                    <p class="featuredblog__topic-summary"></p>
+                    <p class="featuredblog__topic-summary">The Fun Side of Life</p>
                 </div>
 
-            <a href="blogpost1.html" class="blog-featuredblog">
-                <img src="" alt="Music" width="" height="" class="blog-image">
+            <a href="blogpost1.html" class="blog featured-blog">
+                <img src="img/download.jpeg" alt="Music" width="564" height="461" class="blog-image">
                 <figcaption class="blog-category">Music</figcaption>
 
-                <div class="blog-data-container">
+                <div class="image-data-container">
                   <div class="blog-data">
                     <span>May 10th 2024</span>
-                    <span class="blog-data-spacer"></span>
+                   
                   </div>
                   <h3 class="blog-title">Music is the rhythm of life!</h3>
                 </div>
-            </a>    
-            <a href="blogpost2.html" class="blog-featuredblog">
-                <img src="" alt="Music" width="" height="" class="blog-image">
-                <figcaption class="blog-category">Music</figcaption>
+            </a>   
 
-                <div class="blog-data-container">
+            <a href="blogpost2.html" class="blog featured-blog">
+                <img src="img/Easy sausage rolls.jpeg" alt="Food" width="564" height="461" class="blog-image">
+                <figcaption class="blog-category">Food</figcaption>
+
+                <div class="image-data-container">
                   <div class="blog-data">
                     <span>May 10th 2024</span>
-                    <span class="blog-data-spacer"></span>
+                   
                   </div>
-                  <h3 class="blog-title">Music is the rhythm of life!</h3>
+                  <h3 class="blog-title">Eat Well Live Well!</h3>
                 </div>
             </a>    
-            <a href="blogpost3.html" class="blog-featuredblog">
-                <img src="" alt="Music" width="" height="" class="blog-image">
-                <figcaption class="blog-category">Music</figcaption>
+            <a href="blogpost3.html" class="blog featured-blog">
+                <img src="img/Premium Photo _ Goalkeeper kicks the ball in the stadium during a football game.jpeg" alt="soccer" width="564" height="461" class="blog-image">
+                <figcaption class="blog-category">Soccer</figcaption>
 
-                <div class="blog-data-container">
+                <div class="image-data-container">
                   <div class="blog-data">
                     <span>May 10th 2024</span>
-                    <span class="blog-data-spacer"></span>
+                   
                   </div>
-                  <h3 class="blog-title">soccer!</h3>
+                  <h3 class="blog-title">Dive into the world of soccer</h3>
                 </div>
             </a>    
-            <a href="blogpost3.html" class="blog-featuredblog">
+
+            <a href="blogpost4.html" class="blog-featuredblog">
                 <img src="img/gaming.jpg" alt="Games" width="1300" height="648" class="blog-image">
+
+
+            <a href="blogpost4.html" class="blog featured-blog">
+                <img src="img/URBAN LIST GOLD COAST_ GOOD LIFE_ GOOD COMPANY.jpeg" alt="Gaming" width="564" height="461" class="blog-image">
+
                 <figcaption class="blog-category">Gaming</figcaption>
 
-                <div class="blog-data-container">
+                <div class="image-data-container">
                   <div class="blog-data">
                     <span>May 10th 2024</span>
-                    <span class="blog-data-spacer"></span>
+                   
                   </div>
                   <h3 class="blog-title">Want To Escape Reality for a while?</h3>
                 </div>
@@ -121,67 +159,74 @@
         </div>
     </section>
 
-    <!-- QUICK READ -->
+
+    QUICK READ
     <section class="quickread__section">
+
+    <!-- QUICK READ -->
+
+    
+    <section class=" quick-read">
+
         <div class="container">
+
+
             <h2 class="title section-title">
                 Quick Read
             </h2>
             
-            <div class="swiper">
-                <div class="swiper-wrapper">
-
-                    <a href="#" class="blog swiper-slide">
-                        <img src="" alt="">
-                        
+                    <a href="#" class="quick-read swiper-slide ">
+                        <img src="img/fashion.jpeg" alt="fashion" width="500" height="500">                        
                         <div class="blog-data-container">
                             <div class="blog-data">
                               <span>May 10th 2024</span>
-                              <span class="blog-data-spacer"></span>
                             </div>
-                            <h3 class="blog-title"></h3>
+                            <h3 class="blog-title">Jump into the world of fashion!</h3>
+                          </div>    
                     </a>
-                    <a href="#" class="blog swiper-slide">
-                        <img src="" alt="">
 
-                        <div class="blog-data-container">
-                            <div class="blog-data">
-                              <span>May 10th 2024</span>
-                              <span class="blog-data-spacer"></span>
-                            </div>
-                            <h3 class="blog-title"></h3>
-                    </a>
-                    <a href="#" class="blog swiper-slide">
-                        <img src="" alt="">
+                    <a href="#" class="quick-read swiper-slide" >
+                        <img src="img/automotives.jpeg" alt="automotives" width="500" height="500">
 
                         <div class="blog-data-container">
                             <div class="blog-data">
                               <span>May 10th 2024</span>
-                              <span class="blog-data-spacer"></span>
+                            
                             </div>
-                            <h3 class="blog-title"></h3>
+                            <h3 class="blog-title">Explore and discover new automotives</h3>
+                          </div>   
+
                     </a>
-                    <a href="#" class="blog swiper-slide">
-                        <img src="" alt="">
+                    <a href="#" class=" quick-read swiper-slide ">
+                        <img src="img/reading.jpeg" alt="reading" width="500" height="500">
 
                         <div class="blog-data-container">
                             <div class="blog-data">
                               <span>May 10th 2024</span>
-                              <span class="blog-data-spacer"></span>
+                            
                             </div>
-                            <h3 class="gaming">A Great Way of Escaping reality</h3>
+                            <h3 class="blog-title">A reader lives 1000 lives before they die </h3>
+                          </div>
+
                     </a>
+                    <a href="#" class="quick-read swiper-slide ">
+                        <img src="img/technology.jpeg" alt="technolgy" width="500" height="500">
 
-                </div>
+                        <div class="blog-data-container">
+                            <div class="blog-data">
+                              <span>May 10th 2024</span>
+                            
+                            </div>
+                            <h3 class="blog-title">New and Upcoming Tech News</h3>
+                          </div> 
 
-                <div class="swiper-button-prev swiper-controls"></div>
-                <div class="swiper-button-next swiper-controls"></div>
-
-                <div class="swiper-pagination"></div>  
-            </div>
+                    </a>
+              
+            
         </div>
 
     </section>
+
     <!-- newsletter -->
     <section class="newsletter">
         <div class="container">
@@ -266,5 +311,138 @@
             </div>
         </div>
     </footer>
+
+  <script src="index.js"></script>
+
+    <!--OLDER POSTS-->
+   <section class="older-posts section">
+    <div class="container"> 
+      <h2 class="title section-title" data-name="Older posts">Older Posts</h2>
+    <div class="older-posts-grid-wrapper d-grid">
+      <a href="#" class="article d-grid ">
+        <div class="older-posts-article-image-wrapper">
+          <img src="img/sunset.png" alt="sunset" class="article-image ">
+        </div>
+        <div class="article">
+          <div class="blog-data">
+            <span>May 10th 2024</span>
+            <span class="article-data-spacer"></span>
+            <span>8 min read </span>
+          </div>
+          <h3 class=" article article-title ">Are you a cat person?</h3>
+          <p class="article-description">did you know cats have 18 pawtoes?</p>
+          </div> 
+      </a>
+      <a href="#" class="article d-grid ">
+        <div class="older-posts-article-image-wrapper">
+          <img src="img/flower.png" alt="flower" class="article-image ">
+        </div>
+        <div class="article">
+          <div class="blog-data">
+            <span>May 10th 2024</span>
+            <span class="article-data-spacer"></span>
+            <span>8 min read </span>
+          </div>
+          <h3 class=" article article-title ">girls and flowers</h3>
+          <p class="article-description">Do ladies love flowers? </p>
+          </div> 
+      </a>
+      <a href="#" class="article d-grid ">
+        <div class="older-posts-article-image-wrapper">
+          <img src="img/space.png" alt="space" class="article-image ">
+        </div>
+        <div class="article">
+          <div class="blog-data">
+            <span>May 10th 2024</span>
+            <span class="article-data-spacer"></span>
+            <span>8 min read </span>
+          </div>
+          <h3 class=" article article-title ">NASA </h3>
+          <p class="article-description">satelite picture of the space </p>
+          </div> 
+      </a>
+      <a href="#" class="article d-grid ">
+        <div class="older-posts-article-image-wrapper">
+          <img src="img/astronaut.png" alt="astronaut" class="article-image ">
+        </div>
+        <div class="article">
+          <div class="blog-data">
+            <span>May 10th 2024</span>
+            <span class="article-data-spacer"></span>
+            <span>8 min read </span>
+          </div>
+          <h3 class=" article article-title ">exploring space</h3>
+          <p class="article-description">There is liitle chance of survival in mars. </p>
+          </div> 
+      </a>
+      <a href="#" class="article d-grid ">
+        <div class="older-posts-article-image-wrapper">
+          <img src="img/cat.png" alt="cat" class="article-image ">
+        </div>
+        <div class="article">
+          <div class="blog-data">
+            <span>May 10th 2024</span>
+            <span class="article-data-spacer"></span>
+            <span>8 min read </span>
+          </div>
+          <h3 class=" article article-title ">Are you a cat person?</h3>
+          <p class="article-description">did you know cats have 18 pawtoes?</p></div> 
+      </a>
+      <a href="#" class="article d-grid ">
+        <div class="older-posts-article-image-wrapper">
+          <img src="img/mexican.png" alt="mexican man" class="article-image ">
+        </div>
+        <div class="article">
+          <div class="blog-data">
+            <span>May 10th 2024</span>
+            <span class="article-data-spacer"></span>
+            <span>8 min read </span>
+          </div>
+          <h3 class=" article article-title ">mexican culture</h3>
+          <p class="article-description">Are you up to date with the mexican culturre? </p>
+          </div> 
+      </a>
+    </div>
+    <div class="see-more-container">
+      <a href="#" class="btn see-more-btn place-items-centre">See more <i class="rl-arrow-right-s-line"></i></a>
+    </div>
+    </div>
+
+   </section>
+   <!--POPULAR TAGS-->
+<section class="popular-tags section">
+  <div class="container">
+    <h2 class="title section-title" data-name="Popular tags">Popular tags</h2>
+    <div class="popular-tags-container d-grid">
+      <a href="#" class="article">
+        <span class="tag-name">#Travel</span>
+        <img src="img/travel.png" alt="aeroplane window" class="article-image">
+      </a>
+      <a href="#" class="article">
+        <span class="tag-name">#Food</span>
+        <img src="img/food.png" alt=" plates with food" class="article-image">
+      </a>
+      <a href="#" class="article">
+        <span class="tag-name">#Tecnology</span>
+        <img src="img/tec.png" alt="computer" class="article-image">
+      </a>
+      <a href="#" class="article">
+        <span class="tag-name">#Health</span>
+        <img src="img/health.png" alt="post on health" class="article-image">
+      </a>
+      <a href="#" class="article">
+        <span class="tag-name">#Nature</span>
+        <img src="img/nature.png" alt="forest" class="article-image">
+      </a>
+      <a href="#" class="article">
+        <span class="tag-name">#Fitness</span>
+        <img src="img/fitness.png" alt="man running" class="article-image">
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
 </body>
 </html>

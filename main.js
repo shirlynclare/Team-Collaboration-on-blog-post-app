@@ -26,3 +26,4 @@ const toggleMenu = () => {
 };
 
 menuToggleIcon.addEventListener('click', toggleMenu);
+
