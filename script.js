@@ -7,6 +7,7 @@ togglePassword.addEventListener("click", function() {
   } else {
     passwordInput.type = "password";
   }
+  
 });
 
 const form = document.getElementById("my-form");
@@ -27,3 +28,22 @@ form.addEventListener("submit", function(event) {
   window.location.href = "/signin.html?name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email);
 });
 
+const formta = document.getElementById("my-orm");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  // Validate the form fields
+  if (name === "" || email === "") {
+    alert("Please fill in all the fields.");
+    return;
+  }
+
+  // Open the new HTML file in the same window
+  window.location.href = "/index.html?name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email);
+});
+
+ 
