@@ -98,7 +98,12 @@ body.light-theme {
     align-items:center;
     justify-content: center;
 }
-
+.section:not(.featured-articles){
+    padding-block: 5rem;
+}
+.d-grid{
+    display: grid;
+}
 .screen-sm-hidden{
     display: none;
 }
@@ -315,6 +320,7 @@ body.light-theme {
 
 
 /* QUICK READ */
+
 .quick-read {
     position: relative;
     min-height: 40rem;
@@ -342,6 +348,68 @@ body.light-theme {
     background-color: #06156E;
     color: var(--hover-light-color);
 }    
+
+=======
+/*OLDER POSTS*/
+.older-posts-grid-wrapper{
+    gap: var(--gap);
+}
+.older-posts-article-image-wrapper,
+.older-posts .article {
+    min-height: var(--item-min-height-sm);
+}
+.older-posts .article{
+background-color: var(--secondary-background-color);
+}
+.older-posts-article-image-wrapper{
+position: relative;
+}
+.older-posts-grid-wrapper .article-data-container{
+position: static;
+background-color: transparent;
+}
+.older-posts-grid-wrapper .article-title{
+    margin-bottom: var(--margin-sm);
+}
+.see-more-container{
+    margin-top: var(--margin-md);
+}
+.see-more-btn{
+    text-transform:uppercase ;
+}
+.see-more-btn i{
+    transition:transform .25s;
+}
+.see-more-btn:hover i {
+    transform: translateX(.5rem);
+}
+  /* POPULAR TAGS*/
+  .popular-tags-container{
+    gap: var(--gap);
+}
+.popular-tags-container .article{
+    min-height: var(--item-min-height-sm);
+}
+.tag-name{
+    padding: 1rem 2rem;
+    background-color: var(--transparent-dark-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.popular-tags-container .article:hover .tag-name{
+    color: var(--light-color);
+}
+.popular-tags-container .article{
+    overflow: hidden;
+}
+.popular-tags-container .article:hover .article-image{
+    transform: scale(1.05);
+}
+
+
 
 /* newsletter */
 .newsletter {
@@ -564,8 +632,9 @@ footer-container {
         grid-column: 1/3;
         grid-row: 2/-1;
     }
+
 }
-/* ======= */
+
 /*OLDER POSTS*/
 .older-posts-grid-wrapper{
     gap: var(--gap);
@@ -600,4 +669,6 @@ background-color: transparent;
     transform: translateX(.5rem);
 }
   
-/* >>>>>>> 7b56f3ba550430e4b57493a8987594a1498c1c1f */
+
+}
+
