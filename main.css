@@ -40,6 +40,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     font-size: 62.5%;
+    scroll-margin-top: 20px;
 }
 
 body {
@@ -289,7 +290,8 @@ body.light-theme {
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: 2rem;    
+    padding: 2rem; 
+    width: 100%;   
 }
 .featuredblogs__headline {
     color: var(--light-color);
@@ -452,9 +454,11 @@ background-color: transparent;
   /* POPULAR TAGS*/
   .popular-tags-container{
     gap: var(--gap);
+    
 }
 .popular-tags-container .article{
     min-height: var(--item-min-height-sm);
+    position: relative;
 }
 .tag-name{
     padding: 1rem 2rem;
