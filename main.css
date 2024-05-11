@@ -1,7 +1,7 @@
 /* RSEST */
 *{
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -40,7 +40,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     font-size: 62.5%;
-    scroll-margin-top: 20px;
+    
 }
 
 body {
@@ -115,7 +115,7 @@ body.light-theme {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 10;
 
 }
 
@@ -151,7 +151,7 @@ body.light-theme {
     gap: var(--gap);
 }
 
-.menu >.list{
+.menu .list{
     flex-direction: column;
 }
 
@@ -270,6 +270,34 @@ body.light-theme {
     opacity: 1;
     transform: scale(1);
 }
+
+/* CREATE A BLOGBOST BUTTON */
+h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    margin-top: 40px;
+    color: white;
+}
+.create-blogform {
+    margin: 1rem;
+
+}
+
+
+.create-blogbtn{
+    background-color: #4fcf70;
+    color: white;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.create-blogbtn:hover {
+    background-color: #1e5e38;
+}
+
 /* FEATURED BLOGS */
 .featuredblogs {
     padding-block: 2rem;
