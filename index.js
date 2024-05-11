@@ -1,7 +1,7 @@
 const selectElement = selector => {
     const element = document.querySelector(selector)
     if(element) return element;
-    throw new Error(`Something went, make sure that ${selector} exists or is typed correctly.`);
+    throw new Error(`Something went wrong, make sure that ${selector} exists or is typed correctly.`);
 };
 
 const scrollHeader = () => {
@@ -58,3 +58,6 @@ themeToggleBtn.addEventListener('click', () => {
 
 
 });
+
+
+
