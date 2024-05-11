@@ -302,7 +302,7 @@ h1 {
 .featuredblogs {
     padding-block: 2rem;
     margin-top: 8rem;
-    min-width: fit-content;
+    
 
 }
 
@@ -312,6 +312,7 @@ h1 {
 .featuredblogs__content {
     gap: var(--gap);
     display: grid;
+    
 }
 .featuredblogs__topic-banner {
     background-color: var(--secondary-background-color);
