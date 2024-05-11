@@ -40,6 +40,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     font-size: 62.5%;
+    scroll-margin-top: 20px;
 }
 
 body {
