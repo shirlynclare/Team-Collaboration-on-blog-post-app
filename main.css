@@ -9,6 +9,7 @@ img {
    
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 /* VARIABLES */
@@ -302,7 +303,7 @@ h1 {
 .featuredblogs {
     padding-block: 2rem;
     margin-top: 8rem;
-    min-width: fit-content;
+    
 
 }
 
@@ -312,11 +313,12 @@ h1 {
 .featuredblogs__content {
     gap: var(--gap);
     display: grid;
+    
 }
 .featuredblogs__topic-banner {
     background-color: var(--secondary-background-color);
     display: flex;
-    align-items: center;
+    justify-content: centre;
     gap: 2rem;
     padding: 2rem; 
     width: 100%;   
