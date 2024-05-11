@@ -46,4 +46,62 @@ form.addEventListener("submit", function(event) {
   window.location.href = "/index.html?name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email);
 });
 
+// likes
+// Get all like and comment buttons
+const likeButtons = document.querySelectorAll('.like-button');
+const commentButtons = document.querySelectorAll('.comment-button');
+
+// Add click event listeners to like buttons
+likeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const blogId = button.getAttribute(jk);
+    const likeCount = parseInt(button.querySelector('.like-count').textContent);
+    const newLikeCount = likeCount + 1;
+    button.querySelector('.like-count').textContent = newLikeCount;
+
+    // Send a request to the server to update the like count
+    fetch(`/api/blogs/${blogId}/like`, {
+      method: 'POST'
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          console.log('Like count updated successfully');
+        } else {
+          console.error('Error updating like count');
+        }
+      })
+      .catch(error => {
+        console.error('Error updating like count:', error);
+      });
+  });
+});
+
+// Add click event listeners to comment buttons
+commentButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const blogId = button.getAttribute(jk);
+    const commentCount = parseInt(button.querySelector('.comment-count').textContent);
+    const newCommentCount = commentCount + 1;
+    button.querySelector('.comment-count').textContent = newCommentCount;
+
+    // Send a request to the server to update the comment count
+    fetch(`/api/blogs/${blogId}/comment`, {
+      method: 'POST'
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          console.log('Comment count updated successfully');
+        } else {
+          console.error('Error updating comment count');
+        }
+      })
+      .catch(error => {
+        console.error('Error updating comment count:', error);
+      });
+  });
+});
+
+
  

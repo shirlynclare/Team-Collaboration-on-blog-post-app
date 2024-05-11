@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevation BLogs</title>
+    <title translate="no">Elevation BLogs</title>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="img/blog post icon.jpg" type="image/jpg" sizes="400x300">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <script src="main.js"></script>
-    <script src="script.js"></script>
-    <script src="blogpost.js"></script>
+    
 
 </head>
 <body>
@@ -98,7 +96,7 @@
 
 <form class="create-blogform" id="blogForm">
     <label for="title">Title:</label><br>
-    <input type="text" id="title" name="title" required><br><br>
+    <input type="text" id="title" name="title" spellcheck="true" lang="en" required><br><br>
     <textarea id="title" name="title" rows="4" cols="50" placeholder="Blog Title Here"></textarea><br>
     <label for="content">Content:</label><br>
     <textarea id="content" name="content" rows="20" cols="50" required></textarea><br><br>
@@ -135,6 +133,16 @@
                   <h3 class="blog-title">Music is the rhythm of life!</h3>
                 </div>
             </a>   
+            <div class="blog-actions">
+              <button class="like-button" data-blog-id="jk">
+                <i class="ri-heart-line"></i>
+                <span class="like-count">178</span>
+              </button>
+              <button class="comment-button" data-blog-id="jk">
+                <i class="ri-chat-3-line"></i>
+                <span class="comment-count">23</span>
+              </button>
+            </div>
 
             <a href="blogpost2.html" class="blog featured-blog">
                 <img src="img/Easy sausage rolls.jpeg" alt="Food" width="564" height="461" class="blog-image">
@@ -148,6 +156,17 @@
                   <h3 class="blog-title">Eat Well Live Well!</h3>
                 </div>
             </a>    
+            <div class="blog-actions">
+              <button class="like-button" data-blog-id="jk">
+                <i class="ri-heart-line"></i>
+                <span class="like-count">270</span>
+              </button>
+              <button class="comment-button" data-blog-id="jk">
+                <i class="ri-chat-3-line"></i>
+                <span class="comment-count">90</span>
+              </button>
+            </div>
+
             <a href="blogpost5.html" class="blog featured-blog">
                 <img src="http://127.0.0.1:5500/img/beautides.jpg" alt="soccer" width="564" height="461" class="blog-image">
                 <figcaption class="blog-category">Explore</figcaption>
@@ -160,6 +179,16 @@
                   <h3 class="blog-title">Dive into the world of exploration</h3>
                 </div>
             </a>    
+            <div class="blog-actions">
+              <button class="like-button" data-blog-id="jk">
+                <i class="ri-heart-line"></i>
+                <span class="like-count">980</span>
+              </button>
+              <button class="comment-button" data-blog-id="jk">
+                <i class="ri-chat-3-line"></i>
+                <span class="comment-count">70</span>
+              </button>
+            </div>
 
             <a href="blogpost4.html" class="blog featured-blog">
                 <img src="img/URBAN LIST GOLD COAST_ GOOD LIFE_ GOOD COMPANY.jpeg" alt="Gaming" width="564" height="461" class="blog-image">
@@ -173,7 +202,17 @@
                   </div>
                   <h3 class="blog-title">Want To Escape Reality for a while?</h3>
                 </div>
-            </a>    
+            </a>  
+            <div class="blog-actions">
+              <button class="like-button" data-blog-id="jk">
+                <i class="ri-heart-line"></i>
+                <span class="like-count">67</span>
+              </button>
+              <button class="comment-button" data-blog-id="jk">
+                <i class="ri-chat-3-line"></i>
+                <span class="comment-count">98</span>
+              </button>
+            </div>  
             </div>
         </div>
     </section>
@@ -201,7 +240,17 @@
                               <span>May 10th 2024</span>
                             </div>
                             <h3 class="blog-title">Jump into the world of fashion!</h3>
-                          </div>    
+                          </div> 
+                          <div class="blog-actions">
+                            <button class="like-button" data-blog-id="jk">
+                              <i class="ri-heart-line"></i>
+                              <span class="like-count">67</span>
+                            </button>
+                            <button class="comment-button" data-blog-id="jk">
+                              <i class="ri-chat-3-line"></i>
+                              <span class="comment-count">98</span>
+                            </button>
+                          </div>     
                     </a>
 
                     <a href="#" class="quick-read swiper-slide" >
@@ -214,8 +263,18 @@
                             </div>
                             <h3 class="blog-title">Explore and discover new automotives</h3>
                           </div>   
-
+                          <div class="blog-actions">
+                            <button class="like-button" data-blog-id="jk">
+                              <i class="ri-heart-line"></i>
+                              <span class="like-count">67</span>
+                            </button>
+                            <button class="comment-button" data-blog-id="jk">
+                              <i class="ri-chat-3-line"></i>
+                              <span class="comment-count">98</span>
+                            </button>
+                          </div>  
                     </a>
+
                     <a href="#" class=" quick-read swiper-slide ">
                         <img src="img/reading.jpeg" alt="reading" width="500" height="500">
 
@@ -226,8 +285,19 @@
                             </div>
                             <h3 class="blog-title">A reader lives 1000 lives before they die </h3>
                           </div>
+                          <div class="blog-actions">
+                            <button class="like-button" data-blog-id="jk">
+                              <i class="ri-heart-line"></i>
+                              <span class="like-count">67</span>
+                            </button>
+                            <button class="comment-button" data-blog-id="jk">
+                              <i class="ri-chat-3-line"></i>
+                              <span class="comment-count">98</span>
+                            </button>
+                          </div>  
 
                     </a>
+
                     <a href="#" class="quick-read swiper-slide ">
                         <img src="img/technology.jpeg" alt="technolgy" width="500" height="500">
 
@@ -237,7 +307,17 @@
                             
                             </div>
                             <h3 class="blog-title">New and Upcoming Tech News</h3>
-                          </div> 
+                          </div>
+                          <div class="blog-actions">
+                            <button class="like-button" data-blog-id="jk">
+                              <i class="ri-heart-line"></i>
+                              <span class="like-count">67</span>
+                            </button>
+                            <button class="comment-button" data-blog-id="jk">
+                              <i class="ri-chat-3-line"></i>
+                              <span class="comment-count">98</span>
+                            </button>
+                          </div>   
 
                     </a>
               
@@ -265,6 +345,16 @@
           <p class="article-description">did you know cats have 18 pawtoes?</p>
           </div> 
       </a>
+      <div class="blog-actions">
+        <button class="like-button" data-blog-id="jk">
+          <i class="ri-heart-line"></i>
+          <span class="like-count">67</span>
+        </button>
+        <button class="comment-button" data-blog-id="jk">
+          <i class="ri-chat-3-line"></i>
+          <span class="comment-count">98</span>
+        </button>
+      </div>  
       <a href="#" class="article d-grid ">
         <div class="older-posts-article-image-wrapper">
           <img src="img/flower.png" alt="flower" class="article-image " width="800" height="533">
@@ -278,6 +368,16 @@
           <h3 class=" title  article-title ">girls and flowers</h3>
           <p class="article-description">Do ladies love flowers? </p>
           </div> 
+          <div class="blog-actions">
+            <button class="like-button" data-blog-id="jk">
+              <i class="ri-heart-line"></i>
+              <span class="like-count">67</span>
+            </button>
+            <button class="comment-button" data-blog-id="jk">
+              <i class="ri-chat-3-line"></i>
+              <span class="comment-count">98</span>
+            </button>
+          </div>  
       </a>
       <a href="#" class="article d-grid ">
         <div class="older-posts-article-image-wrapper">
@@ -292,6 +392,16 @@
           <h3 class="title  article-title ">NASA </h3>
           <p class="article-description">satelite picture of the space </p>
           </div> 
+          <div class="blog-actions">
+            <button class="like-button" data-blog-id="jk">
+              <i class="ri-heart-line"></i>
+              <span class="like-count">67</span>
+            </button>
+            <button class="comment-button" data-blog-id="jk">
+              <i class="ri-chat-3-line"></i>
+              <span class="comment-count">98</span>
+            </button>
+          </div>  
       </a>
       <a href="#" class="article d-grid ">
         <div class="older-posts-article-image-wrapper">
@@ -306,6 +416,16 @@
           <h3 class="title article-title ">exploring space</h3>
           <p class="article-description">There is liitle chance of survival in mars. </p>
           </div> 
+          <div class="blog-actions">
+            <button class="like-button" data-blog-id="jk">
+              <i class="ri-heart-line"></i>
+              <span class="like-count">67</span>
+            </button>
+            <button class="comment-button" data-blog-id="jk">
+              <i class="ri-chat-3-line"></i>
+              <span class="comment-count">98</span>
+            </button>
+          </div>  
       </a>
       <a href="#" class="article d-grid ">
         <div class="older-posts-article-image-wrapper">
@@ -319,6 +439,16 @@
           </div>
           <h3 class=" title article-title ">Are you a cat person?</h3>
           <p class="article-description">Did you know cats have 18 paw toes?</p></div> 
+          <div class="blog-actions">
+            <button class="like-button" data-blog-id="jk">
+              <i class="ri-heart-line"></i>
+              <span class="like-count">67</span>
+            </button>
+            <button class="comment-button" data-blog-id="jk">
+              <i class="ri-chat-3-line"></i>
+              <span class="comment-count">98</span>
+            </button>
+          </div>  
       </a>
       <a href="#" class="article d-grid ">
         <div class="older-posts-article-image-wrapper">
@@ -333,6 +463,16 @@
           <h3 class="title article-title ">mexican culture</h3>
           <p class="article-description">Are you up to date with the mexican culturre? </p>
           </div> 
+          <div class="blog-actions">
+            <button class="like-button" data-blog-id="jk">
+              <i class="ri-heart-line"></i>
+              <span class="like-count">67</span>
+            </button>
+            <button class="comment-button" data-blog-id="jk">
+              <i class="ri-chat-3-line"></i>
+              <span class="comment-count">98</span>
+            </button>
+          </div>  
       </a>
     </div>
     <div class="see-more-container">
@@ -436,10 +576,10 @@
         <h6 class="title footer-title">Lifestyle</h6>
         <ul class="list footer-list">
             <li class="list-item">
-              <a href="#blogpost3.html" class="list-link">Gaming</a>
+              <a href="#blogpost4.html" class="list-link">Gaming</a>
             </li>
             <li class="list-item">
-              <a href="#" class="list-link">Music</a>
+              <a href="#blogpost1.html" class="list-link">Music</a>
             </li>
             <li class="list-item">
               <a href="#" class="list-link">Fashion</a>
@@ -453,10 +593,10 @@
               <a href="#" class="list-link">Soccer</a>
             </li>
             <li class="list-item">
-              <a href="#" class="list-link">Nutrition</a>
+              <a href="#blogpost2.html" class="list-link">Nutrition</a>
             </li>
             <li class="list-item">
-              <a href="#" class="list-link">Yoga</a>
+              <a href="#blogpost5.html" class="list-link">Explore</a>
             </li>
         </ul>
       </div>
